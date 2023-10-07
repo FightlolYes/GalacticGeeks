@@ -14,4 +14,10 @@ body {
     height: 400px; /* Set the desired height for your map container */
     border: 1px solid #ccc; /* Optional: Add a border to the map container */
   }
+  .custom-tooltip {
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    padding: 6px;
+    font-size: 14px;
+  }
   

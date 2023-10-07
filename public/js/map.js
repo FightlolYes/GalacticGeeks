@@ -12,6 +12,18 @@ document.addEventListener("DOMContentLoaded", () => {
       { coordinates: [51.51, -0.1], id: 2 },
       // Add more waypoints here
     ];
+
+    var marker = L.marker([12.2502, 64.3372], {
+      tooltip: {
+        permanent: true,
+        direction: 'top',
+        className: 'custom-tooltip',
+        sticky: true,
+      }
+    }).addTo(map);
+    
+    marker.bindTooltip("Marker Name in Your Language").openTooltip();
+    
   
     waypoints.forEach(waypoint => {
       const marker = L.marker(waypoint.coordinates).addTo(map);
