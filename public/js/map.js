@@ -6,13 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
       maxZoom: 19,
     }).addTo(map);
   
-    // Create waypoints with click actions
-    const waypoints = [
-      { coordinates: [51.505, -0.09], id: 1 },
-      { coordinates: [51.51, -0.1], id: 2 },
-      // Add more waypoints here
-    ];
-
     var marker = L.marker([12.2502, 64.3372], {
       tooltip: {
         permanent: true,
@@ -21,6 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
         sticky: true,
       }
     }).addTo(map);
+
+    // Create waypoints with click actions
+    const waypoints = [
+      { coordinates: [51.505, -0.09], marker,id: 1 },
+      { coordinates: [51.51, -0.1], marker,id: 2 },
+      // Add more waypoints here
+    ];
+
+
     
     marker.bindTooltip("Marker Name in Your Language").openTooltip();
     
