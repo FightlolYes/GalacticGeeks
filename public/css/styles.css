@@ -10,7 +10,7 @@ body {
   }
   
   .map-container {
-    width: 400px; /* Set the desired width for your map container */
+    width: 1200px; /* Set the desired width for your map container */
     height: 400px; /* Set the desired height for your map container */
     border: 1px solid #ccc; /* Optional: Add a border to the map container */
   }
